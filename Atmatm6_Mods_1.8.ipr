@@ -172,6 +172,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Atmatm6_Mods_1.8.iml" filepath="$PROJECT_DIR$/Atmatm6_Mods_1.8.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/Minecraft/Modding Workspace/forge gradle/forge gradle.iml" filepath="$USER_HOME$/Desktop/Minecraft/Modding Workspace/forge gradle/forge gradle.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">

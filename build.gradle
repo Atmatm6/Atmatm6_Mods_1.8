@@ -17,9 +17,9 @@ buildscript {
 
 apply plugin: 'fml'
 
-version = "1.0"
-group= "com.yourname.modid" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "modid"
+version = "mc1.8-0.1 "
+group= "com.Atmatm6" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "Atmatm6's_Mods"
 
 minecraft {
     version = "1.8-8.0.9.1016-1.8"

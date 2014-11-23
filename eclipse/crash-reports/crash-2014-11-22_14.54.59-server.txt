@@ -1,0 +1,238 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 22/11/14 2:54 PM
+Description: Watching Server
+
+java.lang.Error
+	at net.minecraft.world.World.func_147467_a(World.java:2461)
+	at net.minecraft.world.WorldServer.func_147456_g(WorldServer.java:363)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:205)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:708)
+	at net.minecraft.server.dedicated.DedicatedServer.updateTimeLightAndEntities(DedicatedServer.java:364)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:617)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:497)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.world.World.func_147467_a(World.java:2461)
+	at net.minecraft.world.WorldServer.func_147456_g(WorldServer.java:363)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:205)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:708)
+	at net.minecraft.server.dedicated.DedicatedServer.updateTimeLightAndEntities(DedicatedServer.java:364)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:617)
+
+-- Thread Dump --
+Details:
+	Threads: "File IO Thread" Id=40 RUNNABLE
+	at java.util.zip.Deflater.deflateBytes(Native Method)
+	at java.util.zip.Deflater.deflate(Deflater.java:430)
+	-  locked java.util.zip.ZStreamRef@5b1084ee
+	at java.util.zip.Deflater.deflate(Deflater.java:352)
+	at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:251)
+	at java.util.zip.DeflaterOutputStream.write(DeflaterOutputStream.java:211)
+	at java.util.zip.DeflaterOutputStream.write(DeflaterOutputStream.java:188)
+	at java.io.DataOutputStream.writeByte(DataOutputStream.java:153)
+	at net.minecraft.nbt.NBTTagCompound.writeEntry(NBTTagCompound.java:388)
+	...
+
+
+"Netty Server IO #1" Id=31 RUNNABLE
+	at java.util.concurrent.ConcurrentLinkedQueue.casHead(ConcurrentLinkedQueue.java:815)
+	at java.util.concurrent.ConcurrentLinkedQueue.updateHead(ConcurrentLinkedQueue.java:304)
+	at java.util.concurrent.ConcurrentLinkedQueue.poll(ConcurrentLinkedQueue.java:365)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.pollTask(SingleThreadEventExecutor.java:177)
+	at io.netty.channel.nio.NioEventLoop.pollTask(NioEventLoop.java:395)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:370)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:353)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	...
+
+
+"Server Watchdog" Id=35 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:446)
+	at net.minecraft.server.dedicated.ServerHangWatchdog.run(ServerHangWatchdog.java:46)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Netty Server IO #0" Id=30 RUNNABLE (in native)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:87)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@3998a39
+	-  locked java.util.Collections$UnmodifiableSet@48fb414b
+	-  locked sun.nio.ch.WindowsSelectorImpl@6f9f0370
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:98)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:596)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:306)
+	...
+
+
+"Server console handler" Id=28 RUNNABLE (in native)
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:272)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	-  locked java.io.BufferedInputStream@309ae750
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:283)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:325)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:177)
+	-  locked java.io.InputStreamReader@3d809896
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	...
+
+
+"DestroyJavaVM" Id=27 RUNNABLE
+
+
+"Server thread" Id=25 RUNNABLE
+	at net.minecraft.world.World.func_147467_a(World.java:2461)
+	at net.minecraft.world.WorldServer.func_147456_g(WorldServer.java:363)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:205)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:708)
+	at net.minecraft.server.dedicated.DedicatedServer.updateTimeLightAndEntities(DedicatedServer.java:364)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:617)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:497)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"D3D Screen Updater" Id=24 TIMED_WAITING on java.lang.Object@45a1bf65
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.Object@45a1bf65
+	at sun.java2d.d3d.D3DScreenUpdateManager.run(D3DScreenUpdateManager.java:432)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"TimerQueue" Id=22 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@a38d27e
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@a38d27e
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2082)
+	at java.util.concurrent.DelayQueue.take(DelayQueue.java:220)
+	at javax.swing.TimerQueue.run(TimerQueue.java:171)
+	at java.lang.Thread.run(Thread.java:745)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@7e1ca399
+
+
+"Thread-5" Id=21 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@18835370
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@18835370
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:186)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2043)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at com.mojang.util.QueueLogAppender.getNextLogEvent(QueueLogAppender.java:77)
+	at net.minecraft.server.gui.MinecraftServerGui$4.run(MinecraftServerGui.java:157)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"AWT-EventQueue-0" Id=20 RUNNABLE
+	at sun.awt.windows.ThemeReader.isThemePartDefined(Native Method)
+	at sun.awt.windows.ThemeReader.isThemePartDefined(ThemeReader.java:154)
+	at com.sun.java.swing.plaf.windows.XPStyle.isSkinDefined(XPStyle.java:441)
+	at com.sun.java.swing.plaf.windows.XPStyle.isVista(XPStyle.java:123)
+	at com.sun.java.swing.plaf.windows.WindowsScrollBarUI.setThumbRollover(WindowsScrollBarUI.java:266)
+	at javax.swing.plaf.basic.BasicScrollBarUI.setThumbBounds(BasicScrollBarUI.java:902)
+	at javax.swing.plaf.basic.BasicScrollBarUI.layoutVScrollbar(BasicScrollBarUI.java:735)
+	at javax.swing.plaf.basic.BasicScrollBarUI.layoutContainer(BasicScrollBarUI.java:862)
+	...
+
+
+"AWT-Windows" Id=18 RUNNABLE (in native)
+	at sun.awt.windows.WToolkit.eventLoop(Native Method)
+	at sun.awt.windows.WToolkit.run(WToolkit.java:308)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"AWT-Shutdown" Id=17 WAITING on java.lang.Object@55daeaa2
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.Object@55daeaa2
+	at java.lang.Object.wait(Object.java:503)
+	at sun.awt.AWTAutoShutdown.run(AWTAutoShutdown.java:296)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Java2D Disposer" Id=16 WAITING on java.lang.ref.ReferenceQueue$Lock@17625db7
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@17625db7
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:135)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+	at sun.java2d.Disposer.run(Disposer.java:145)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Server Infinisleeper" Id=15 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:73)
+
+
+"Snooper Timer" Id=14 TIMED_WAITING on java.util.TaskQueue@3af6a55f
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@3af6a55f
+	at java.util.TimerThread.mainLoop(Timer.java:552)
+	at java.util.TimerThread.run(Timer.java:505)
+
+
+"Monitor Ctrl-Break" Id=10 RUNNABLE (in native)
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(DualStackPlainSocketImpl.java:131)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:398)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:199)
+	-  locked java.net.SocksSocketImpl@16e31e37
+	at java.net.ServerSocket.implAccept(ServerSocket.java:530)
+	at java.net.ServerSocket.accept(ServerSocket.java:498)
+	at com.intellij.rt.execution.application.AppMain$1.run(AppMain.java:85)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Attach Listener" Id=6 RUNNABLE
+
+
+"Signal Dispatcher" Id=5 RUNNABLE
+
+
+"Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@18d4b89e
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@18d4b89e
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:135)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+
+"Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@35a499ce
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@35a499ce
+	at java.lang.Object.wait(Object.java:503)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:133)
+
+
+
+Stacktrace:
+	at net.minecraft.server.dedicated.ServerHangWatchdog.run(ServerHangWatchdog.java:67)
+	at java.lang.Thread.run(Thread.java:745)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8
+	Operating System: Windows 8.1 (amd64) version 6.3
+	Java Version: 1.7.0_67, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 212675104 bytes (202 MB) / 340733952 bytes (324 MB) up to 1593180160 bytes (1519 MB)
+	JVM Flags: 1 total; -Xincgc
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP v9.10 FML v8.0.9.1016 2 mods loaded, 2 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{8.0.9.1016} [Forge Mod Loader] (fmlSrc-1.8-8.0.9.1016-1.8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 20; [EntityPlayerMP['Atmatm6'/2624, l='world', x=-5.95, y=69.00, z=252.78]]
+	Is Modded: Definitely; Server brand changed to 'fml'
+	Type: Dedicated Server (map_server.txt)

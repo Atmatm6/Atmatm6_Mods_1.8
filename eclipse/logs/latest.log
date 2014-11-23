@@ -1,0 +1,24 @@
+[17:20:00] [Client thread/INFO]: Setting user: Atmatm6
+[17:20:00] [Client thread/INFO]: (Session ID is token:FML:Atmatm6)
+[17:20:19] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:21:57] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Atmatm6's Mods For 1.8, FMLFileResourcePack:Zach's Mod
+[17:22:03] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[17:22:03] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[17:22:03] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[17:22:04] [Thread-7/INFO]: OpenAL initialized.
+[17:22:04] [Sound Library Loader/INFO]: Sound engine started
+[17:22:07] [Client thread/WARN]: File minecraft:sounds/mob/ghast/fireball.ogg does not exist, cannot add it to event minecraft:item.fireCharge.use
+[17:22:38] [Client thread/INFO]: Created: 512x512 textures-atlas
+[17:22:48] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Atmatm6's Mods For 1.8, FMLFileResourcePack:Zach's Mod
+[17:22:48] [Client thread/INFO]: SoundSystem shutting down...
+[17:22:49] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[17:22:49] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[17:22:49] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[17:22:49] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[17:22:49] [Thread-9/INFO]: OpenAL initialized.
+[17:22:49] [Sound Library Loader/INFO]: Sound engine started
+[17:22:52] [Client thread/WARN]: File minecraft:sounds/mob/ghast/fireball.ogg does not exist, cannot add it to event minecraft:item.fireCharge.use
+[17:23:21] [Client thread/INFO]: Created: 512x512 textures-atlas
+[17:25:03] [Client thread/INFO]: Stopping!
+[17:25:03] [Client thread/INFO]: SoundSystem shutting down...
+[17:25:03] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

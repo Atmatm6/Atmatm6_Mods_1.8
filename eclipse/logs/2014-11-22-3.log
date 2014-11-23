@@ -1,0 +1,165 @@
+[14:46:13] [main/INFO]: Logging in with username & password
+[14:46:44] [Client thread/INFO]: Setting user: Atmatm6
+[14:46:44] [Client thread/INFO]: (Session ID is token:4b8abb8896f5437bbb13552d94c2e3e5:85b7077dcdb346e3b2de22c05370884a)
+[14:47:02] [Client thread/INFO]: LWJGL Version: 2.9.1
+[14:47:30] [Client thread/INFO]: Reloading ResourceManager: Default, FML[14:48:15] [Server thread/INFO]: Loading properties
+[14:48:15] [Server thread/WARN]: server.properties does not exist
+[14:48:15] [Server thread/INFO]: Generating new properties file
+[14:48:15] [Server thread/WARN]: Failed to load eula.txt
+[14:48:15] [Server thread/INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.
+[14:49:26] [Server thread/INFO]: Unknown command. Try /help for a list of commands
+[14:49:35] [Server thread/INFO]: Unknown command. Try /help for a list of commands
+[14:49:43] [Server thread/INFO]: You must specify which player you wish to perform this action on.
+[14:49:56] [Server thread/INFO]: An unknown error occurred while attempting to perform this command
+[14:49:56] [Server thread/ERROR]: Couldn't process command: 'help'
+java.lang.NullPointerException
+	at net.minecraft.command.server.CommandPardonIp.canCommandSenderUseCommand(CommandPardonIp.java:29) ~[CommandPardonIp.class:?]
+	at net.minecraft.command.CommandHandler.getPossibleCommands(CommandHandler.java:198) ~[CommandHandler.class:?]
+	at net.minecraft.command.CommandHelp.getSortedPossibleCommands(CommandHelp.java:93) ~[CommandHelp.class:?]
+	at net.minecraft.command.CommandHelp.processCommand(CommandHelp.java:42) ~[CommandHelp.class:?]
+	at net.minecraft.command.CommandHandler.func_175786_a(CommandHandler.java:98) [CommandHandler.class:?]
+	at net.minecraft.command.CommandHandler.executeCommand(CommandHandler.java:75) [Comm[14:53:30] [Client thread/INFO]: Connecting to localhost, 25565
+[14:54:15] [Client thread/INFO]: [CHAT] Atmatm6 has just earned the achievement [Taking Inventory]
+[14:56:07] [Client thread/INFO]: Deleting level 1_8
+[14:56:07] [Client thread/INFO]: Attempt 1...
+[14:57:01] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[14:57:01] [Server thread/INFO]: Generating keypair
+[14:57:01] [Server thread/INFO]: Converting map!
+[14:57:01] [Server thread/INFO]: Scanning folders...
+[14:57:01] [Server thread/INFO]: Total conversion count is 0
+[14:57:01] [Server thread/WARN]: Unable to find spawn biome
+[14:57:06] [Server thread/INFO]: Preparing start region for level 0
+[14:57:07] [Server thread/INFO]: Preparing spawn area: 32%
+[14:57:08] [Server thread/INFO]: Preparing spawn area: 78%
+[14:57:08] [Server thread/INFO]: Changing view distance to 12, from 10
+[14:57:08] [Netty Server IO #1/INFO]: Atmatm6[local:E:9f4e5d73] logged in with entity id 602 at (685.5, 56.0, 1413.5)
+[14:57:09] [Netty Server IO #1/INFO]: Atmatm6 joined the game
+[14:57:20] [Server thread/INFO]: Atmatm6 has just earned the achievement [Taking Inventory]
+[14:57:20] [Client thread/INFO]: [CHAT] Atmatm6 has just earned the achievement [Taking Inventory]
+[14:57:36] [Server thread/INFO]: Saving and pausing game...
+[14:57:36] [Server thread/INFO]: Saving chunks for level 'C U N Cansas'/Overworld
+[14:57:38] [Server thread/INFO]: Saving chunks for level 'C U N Cansas'/Nether
+[14:57:38] [Server thread/INFO]: Saving chunks for level 'C U N Cansas'/The End
+[14:57:39] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2638ms behind, skipping 52 tick(s)
+[14:57:42] [Server thread/INFO]: Changing difficulty to PEACEFUL, from NORMAL
+[14:59:43] [Server thread/INFO]: Saving and pausing game...
+[14:59:43] [Server thread/INFO]: Saving chunks for level 'C U N Cansas'/Overworld
+[14:59:43] [Server thread/INFO]: Saving chunks for level 'C U N Cansas'/Nether
+[14:59:43] [Server thread/INFO]: Saving chunks for level 'C U N Cansas'/The End
+[14:59:48] [Server thread/INFO]: Saving and pausing game...
+[14:59:48] [Server thread/INFO]: Saving chunks for level 'C U N Cansas'/Overworld
+[14:59:48] [Server thread/INFO]: Saving chunks for level 'C U N Cansas'/Nether
+[14:59:48] [Server thread/INFO]: Saving chunks for level 'C U N Cansas'/The End
+[14:59:54] [Server thread/INFO]: Stopping server
+[14:59:54] [Server thread/INFO]: Saving players
+[14:59:54] [Server thread/INFO]: Saving worlds
+[14:59:54] [Server thread/INFO]: Saving chunks for level 'C U N Cansas'/Overworld
+[14:59:54] [Server thread/INFO]: Saving chunks for level 'C U N Cansas'/Nether
+[14:59:54] [Server thread/INFO]: Saving chunks for level 'C U N Cansas'/The End
+[14:59:57] [Client thread/INFO]: Stopping!
+[14:59:57] [Client thread/INFO]: SoundSystem shutting down...
+[14:59:57] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+67]
+	at com.google.common.io.Files.newReader(Files.java:86) ~[guava-17.0.jar:?]
+	at net.minecraft.server.management.UserList.readSavedFile(UserList.java:195) ~[UserList.class:?]
+	at net.minecraft.server.dedicated.DedicatedPlayerList.loadOpsList(DedicatedPlayerList.java:133) [DedicatedPlayerList.class:?]
+	at net.minecraft.server.dedicated.DedicatedPlayerList.<init>(DedicatedPlayerList.java:35) [DedicatedPlayerList.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:211) [DedicatedServer.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:457) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Thread.java:745) [?:1.7.0_67]
+[14:51:36] [Server thread/WARN]: Failed to load white-list: 
+java.io.FileNotFoundException: whitelist.json (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method) ~[?:1.7.0_67]
+	at java.io.FileInputStream.<init>(FileInputStream.java:146) ~[?:1.7.0_67]
+	at com.google.common.io.Files.newReader(Files.java:86) ~[guava-17.0.jar:?]
+	at net.minecraft.server.management.UserList.readSavedFile(UserList.java:195) ~[UserList.class:?]
+	at net.minecraft.server.dedicated.DedicatedPlayerList.readWhiteList(DedicatedPlayerList.java:157) [DedicatedPlayerList.class:?]
+	at net.minecraft.server.dedicated.DedicatedPlayerList.<init>(DedicatedPlayerList.java:36) [DedicatedPlayerList.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:211) [DedicatedServer.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:457) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Thread.java:745) [?:1.7.0_67]
+[14:51:37] [Server thread/INFO]: Preparing level "world"
+[14:51:44] [Server thread/INFO]: Preparing start region for level 0
+[14:51:45] [Server thread/INFO]: Preparing spawn area: 0%
+[14:51:46] [Server thread/INFO]: Preparing spawn area: 1%
+[14:51:47] [Server thread/INFO]: Preparing spawn area: 2%
+[14:51:49] [Server thread/INFO]: Preparing spawn area: 3%
+[14:51:50] [Server thread/INFO]: Preparing spawn area: 4%
+[14:51:52] [Server thread/INFO]: Preparing spawn area: 4%
+[14:51:54] [Server thread/INFO]: Preparing spawn area: 5%
+[14:51:55] [Server thread/INFO]: Preparing spawn area: 6%
+[14:51:57] [Server thread/INFO]: Preparing spawn area: 7%
+[14:51:58] [Server thread/INFO]: Preparing spawn area: 8%
+[14:51:59] [Server thread/INFO]: Preparing spawn area: 10%
+[14:52:01] [Server thread/INFO]: Preparing spawn area: 11%
+[14:52:02] [Server thread/INFO]: Preparing spawn area: 13%
+[14:52:04] [Server thread/INFO]: Preparing spawn area: 15%
+[14:52:07] [Server thread/INFO]: Preparing spawn area: 17%
+[14:52:08] [Server thread/INFO]: Preparing spawn area: 18%
+[14:52:11] [Server thread/INFO]: Preparing spawn area: 19%
+[14:52:15] [Server thread/INFO]: Preparing spawn area: 22%
+[14:52:18] [Server thread/INFO]: Preparing spawn area: 22%
+[14:52:20] [Server thread/INFO]: Preparing spawn area: 25%
+[14:52:21] [Server thread/INFO]: Preparing spawn area: 27%
+[14:52:23] [Server thread/INFO]: Preparing spawn area: 29%
+[14:52:25] [Server thread/INFO]: Preparing spawn area: 31%
+[14:52:28] [Server thread/INFO]: Preparing spawn area: 32%
+[14:52:30] [Server thread/INFO]: Preparing spawn area: 35%
+[14:52:31] [Server thread/INFO]: Preparing spawn area: 37%
+[14:52:32] [Server thread/INFO]: Preparing spawn area: 39%
+[14:52:34] [Server thread/INFO]: Preparing spawn area: 42%
+[14:52:35] [Server thread/INFO]: Preparing spawn area: 45%
+[14:52:37] [Server thread/INFO]: Preparing spawn area: 46%
+[14:52:39] [Server thread/INFO]: Preparing spawn area: 48%
+[14:52:40] [Server thread/INFO]: Preparing spawn area: 50%
+[14:52:41] [Server thread/INFO]: Preparing spawn area: 52%
+[14:52:42] [Server thread/INFO]: Preparing spawn area: 52%
+[14:52:43] [Server thread/INFO]: Preparing spawn area: 54%
+[14:52:45] [Server thread/INFO]: Preparing spawn area: 56%
+[14:52:46] [Server thread/INFO]: Preparing spawn area: 58%
+[14:52:47] [Server thread/INFO]: Preparing spawn area: 61%
+[14:52:48] [Server thread/INFO]: Preparing spawn area: 62%
+[14:52:49] [Server thread/INFO]: Preparing spawn area: 63%
+[14:52:51] [Server thread/INFO]: Preparing spawn area: 65%
+[14:52:52] [Server thread/INFO]: Preparing spawn area: 69%
+[14:52:54] [Server thread/INFO]: Preparing spawn area: 69%
+[14:52:56] [Server thread/INFO]: Preparing spawn area: 69%
+[14:52:58] [Server thread/INFO]: Preparing spawn area: 73%
+[14:52:59] [Server thread/INFO]: Preparing spawn area: 77%
+[14:53:01] [Server thread/INFO]: Preparing spawn area: 80%
+[14:53:02] [Server thread/INFO]: Preparing spawn area: 83%
+[14:53:04] [Server thread/INFO]: Preparing spawn area: 84%
+[14:53:06] [Server thread/INFO]: Preparing spawn area: 87%
+[14:53:09] [Server thread/INFO]: Preparing spawn area: 87%
+[14:53:13] [Server thread/INFO]: Preparing spawn area: 90%
+[14:53:15] [Server thread/INFO]: Preparing spawn area: 94%
+[14:53:16] [Server thread/INFO]: Preparing spawn area: 96%
+[14:53:17] [Server thread/INFO]: Preparing spawn area: 98%
+[14:53:18] [Server thread/INFO]: Preparing spawn area: 99%
+[14:53:18] [Server thread/INFO]: Done (102.223s)! For help, type "help" or "?"
+[14:53:21] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2413ms behind, skipping 48 tick(s)
+[14:53:21] [Server thread/INFO]: [Server] localhost
+[14:53:56] [User Authenticator #1/INFO]: UUID of player Atmatm6 is 85b7077d-cdb3-46e3-b2de-22c05370884a
+[14:54:03] [Netty Server IO #1/INFO]: Atmatm6[/127.0.0.1:55572] logged in with entity id 2624 at (-5.5, 64.0, 261.5)
+[14:54:03] [Netty Server IO #1/INFO]: Atmatm6 joined the game
+[14:54:15] [Server thread/INFO]: Atmatm6 has just earned the achievement [Taking Inventory]
+[14:54:56] [Server Watchdog/FATAL]: A single server tick took 60.04 seconds (should be max 0.05)
+[14:54:56] [Server Watchdog/FATAL]: Considering it to be crashed, server will forcibly shutdown.
+[14:54:59] [Server Watchdog/ERROR]: This crash report has been saved to: C:\Users\Austin\Dropbox\Atmatm6_Mods_1.8\eclipse\.\crash-reports\crash-2014-11-22_14.54.59-server.txt
+[14:55:41] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 104944ms behind, skipping 2098 tick(s)
+[14:55:48] [Server thread/INFO]: Set game difficulty to Peaceful
+[14:55:49] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7783ms behind, skipping 155 tick(s)
+[14:56:02] [Server thread/INFO]: Atmatm6 lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}
+[14:56:02] [Server thread/INFO]: Atmatm6 left the game
+[14:56:14] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 15195ms behind, skipping 303 tick(s)
+[14:57:14] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3281ms behind, skipping 65 tick(s)
+[15:00:13] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3373ms behind, skipping 67 tick(s)
+[15:00:46] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3228ms behind, skipping 64 tick(s)
+[15:01:27] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2028ms behind, skipping 40 tick(s)
+[15:01:45] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2048ms behind, skipping 40 tick(s)
+[15:02:14] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2007ms behind, skipping 40 tick(s)
+[15:03:06] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2072ms behind, skipping 41 tick(s)
+[15:07:18] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3171ms behind, skipping 63 tick(s)
+[15:07:56] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2663ms behind, skipping 53 tick(s)
+[15:08:46] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2296ms behind, skipping 45 tick(s)
+[15:09:17] [Server thread/INFO]: Starting minecraft server version 1.8

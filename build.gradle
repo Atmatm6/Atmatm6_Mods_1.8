@@ -12,12 +12,13 @@ buildscript {
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+        classpath 'com.jcabi:'
     }
 }
 
 apply plugin: 'fml'
 
-version = "mc1.8-0.1 "
+version = "mc1.0-0.1 "
 group= "com.Atmatm6" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "Atmatm6's_Mods"
 

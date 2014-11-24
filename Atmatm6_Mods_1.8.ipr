@@ -172,7 +172,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Atmatm6_Mods_1.8.iml" filepath="$PROJECT_DIR$/Atmatm6_Mods_1.8.iml" />
-      <module fileurl="file://$USER_HOME$/Desktop/Minecraft/Modding Workspace/forge gradle/forge gradle.iml" filepath="$USER_HOME$/Desktop/Minecraft/Modding Workspace/forge gradle/forge gradle.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
@@ -184,6 +183,25 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+  </component>
+  <component name="libraryTable">
+    <library name="Cloud Apis">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/Downloads/jcabi-github-0.18-jar-with-dependencies.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$USER_HOME$/Downloads/dropbox-java-sdk-1.7.7.zip!/dropbox-java-sdk-1.7.7/javadoc" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$USER_HOME$/Downloads/dropbox-java-sdk-1.7.7.zip!/dropbox-java-sdk-1.7.7/examples/account-info/src" />
+        <root url="jar://$USER_HOME$/Downloads/dropbox-java-sdk-1.7.7.zip!/dropbox-java-sdk-1.7.7/examples/authorize/src" />
+        <root url="jar://$USER_HOME$/Downloads/dropbox-java-sdk-1.7.7.zip!/dropbox-java-sdk-1.7.7/examples/upgrade-oauth1-token/src" />
+        <root url="jar://$USER_HOME$/Downloads/dropbox-java-sdk-1.7.7.zip!/dropbox-java-sdk-1.7.7/examples/upload-file/src" />
+        <root url="jar://$USER_HOME$/Downloads/dropbox-java-sdk-1.7.7.zip!/dropbox-java-sdk-1.7.7/examples/web-file-browser/src" />
+        <root url="jar://$USER_HOME$/Downloads/dropbox-java-sdk-1.7.7.zip!/dropbox-java-sdk-1.7.7/src" />
+        <root url="jar://$USER_HOME$/Downloads/dropbox-java-sdk-1.7.7.zip!/dropbox-java-sdk-1.7.7/test" />
+      </SOURCES>
+    </library>
   </component>
   <component name="masterDetails">
     <states>

@@ -6,5 +6,4 @@ package com.Atmatm6.Libs.mclibs;
 public class ZachLibs {
     public static final String Modid = "ZacMod";
     public static final String Name = "Zach's Mod";
-    public static final String Dependencies = "required-after:CorePiesForAtmatm6";
 }

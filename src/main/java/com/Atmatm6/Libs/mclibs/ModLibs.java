@@ -5,4 +5,5 @@ package com.Atmatm6.Libs.mclibs;
  */
 public class ModLibs {
     public static final String Version = "0.0.1";
+    public static final String Depends = "required-after:CorePiesForAtmatm6";
 }

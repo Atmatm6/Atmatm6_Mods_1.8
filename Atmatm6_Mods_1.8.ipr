@@ -182,24 +182,27 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />
+    <mapping directory="$USER_HOME$/Desktop/Minecraft/Modding Workspace" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
   <component name="libraryTable">
-    <library name="Cloud Apis">
+    <library name="APIs">
       <CLASSES>
-        <root url="jar://$USER_HOME$/Downloads/jcabi-github-0.18-jar-with-dependencies.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/jcabi-github-0.18-jar-with-dependencies1.jar!/com" />
+        <root url="jar://$PROJECT_DIR$/lib/jcabi-github-0.18-jar-with-dependencies1.jar!/javax" />
+        <root url="jar://$PROJECT_DIR$/lib/jcabi-github-0.18-jar-with-dependencies1.jar!/org" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$USER_HOME$/Downloads/dropbox-java-sdk-1.7.7.zip!/dropbox-java-sdk-1.7.7/javadoc" />
+        <root url="jar://$PROJECT_DIR$/lib/dropbox-java-sdk-1.7.71.zip!/dropbox-java-sdk-1.7.7/javadoc" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$USER_HOME$/Downloads/dropbox-java-sdk-1.7.7.zip!/dropbox-java-sdk-1.7.7/examples/account-info/src" />
-        <root url="jar://$USER_HOME$/Downloads/dropbox-java-sdk-1.7.7.zip!/dropbox-java-sdk-1.7.7/examples/authorize/src" />
-        <root url="jar://$USER_HOME$/Downloads/dropbox-java-sdk-1.7.7.zip!/dropbox-java-sdk-1.7.7/examples/upgrade-oauth1-token/src" />
-        <root url="jar://$USER_HOME$/Downloads/dropbox-java-sdk-1.7.7.zip!/dropbox-java-sdk-1.7.7/examples/upload-file/src" />
-        <root url="jar://$USER_HOME$/Downloads/dropbox-java-sdk-1.7.7.zip!/dropbox-java-sdk-1.7.7/examples/web-file-browser/src" />
-        <root url="jar://$USER_HOME$/Downloads/dropbox-java-sdk-1.7.7.zip!/dropbox-java-sdk-1.7.7/src" />
-        <root url="jar://$USER_HOME$/Downloads/dropbox-java-sdk-1.7.7.zip!/dropbox-java-sdk-1.7.7/test" />
+        <root url="jar://$PROJECT_DIR$/lib/dropbox-java-sdk-1.7.71.zip!/dropbox-java-sdk-1.7.7/examples/account-info/src" />
+        <root url="jar://$PROJECT_DIR$/lib/dropbox-java-sdk-1.7.71.zip!/dropbox-java-sdk-1.7.7/examples/authorize/src" />
+        <root url="jar://$PROJECT_DIR$/lib/dropbox-java-sdk-1.7.71.zip!/dropbox-java-sdk-1.7.7/examples/upgrade-oauth1-token/src" />
+        <root url="jar://$PROJECT_DIR$/lib/dropbox-java-sdk-1.7.71.zip!/dropbox-java-sdk-1.7.7/examples/upload-file/src" />
+        <root url="jar://$PROJECT_DIR$/lib/dropbox-java-sdk-1.7.71.zip!/dropbox-java-sdk-1.7.7/examples/web-file-browser/src" />
+        <root url="jar://$PROJECT_DIR$/lib/dropbox-java-sdk-1.7.71.zip!/dropbox-java-sdk-1.7.7/src" />
+        <root url="jar://$PROJECT_DIR$/lib/dropbox-java-sdk-1.7.71.zip!/dropbox-java-sdk-1.7.7/test" />
       </SOURCES>
     </library>
   </component>

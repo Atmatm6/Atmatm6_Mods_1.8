@@ -663,6 +663,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="Cloud Apis" level="project" />
+    <orderEntry type="library" name="APIs" level="project" />
   </component>
 </module>

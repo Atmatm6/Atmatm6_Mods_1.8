@@ -7,7 +7,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = ZachLibs.Modid, name = ZachLibs.Name, version = ModLibs.Version, dependencies = ZachLibs.Dependencies)
+@Mod(modid = ZachLibs.Modid, name = ZachLibs.Name, version = ModLibs.Version, dependencies = ModLibs.Depends)
 public class ZachCore {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
